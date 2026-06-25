@@ -12,3 +12,6 @@ Our contacts {
 Our contacts {
   font-size: 20px;
 }
+.container {
+  display: flex;
+}
