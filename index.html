@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <title>Brethren ministry</title>
 </head>
 <body>
@@ -27,9 +28,13 @@
   <div class="box">3</div>
 </div>
 <script>
-     document.getElementById("myButton").onclick = function() {
-    document.getElementById("myButton").textContent = "+255 719 745 738";
-  };;
+     let button = document.getElementById("myButton");
+
+button.onclick = function() {
+    if (button.textContent === "Our Contacts") {
+        button.textContent = "+255 719 745 738";
+    } else {
+        button.textContent = "Our Contacts";
   </script>
         </body>
         
