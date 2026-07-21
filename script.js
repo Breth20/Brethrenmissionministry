@@ -14,3 +14,12 @@ contactButton.onclick = function () {
         contactButton.textContent = "Our Contacts";
     }
 };
+let menuButton = document.getElementById("menuButton");
+
+let topMenu = document.getElementById("topMenu");
+
+menuButton.onclick = function(){
+
+topMenu.classList.toggle("show");
+
+}
