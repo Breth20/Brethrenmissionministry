@@ -5,7 +5,7 @@ welcomeButton.onclick = function() {
     "Thank you for visiting Brethren Mission Ministry.";
 };
 
-let contactButton = document.getElementById("myButton");
+let contactButton = document.getElementById("contactButton");
 contactButton.onclick = function () {
 
     if (contactButton.textContent === "Our Contacts") {
