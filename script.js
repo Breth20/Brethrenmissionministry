@@ -1,13 +1,16 @@
 let welcomeButton = document.getElementById("welcomeButton");
+welcomeButton.onclick = function() {
 
-button.onclick = function(){
+    document.getElementById("message").textContent =
+    "Thank you for visiting Brethren Mission Ministry.";
+};
 
-document.getElementById("message").textContent =
-"Thank you for visiting Brethren Mission Ministry.";
+let contactButton = document.getElementById("myButton");
+contactButton.onclick = function () {
 
-}
-
-let ContactButton = document.getElementById("myButton"); button.onclick = function() {
-    if (button.textContent === "Our Contacts") {
-        button.textContent = "+255 719 745 738";} 
-    else {button.textContent = "Our Contacts";}};
+    if (contactButton.textContent === "Our Contacts") {
+        contactButton.textContent = "+255 719 745 738";
+    } else {
+        contactButton.textContent = "Our Contacts";
+    }
+};
