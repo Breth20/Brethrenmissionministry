@@ -37,28 +37,20 @@ text-align:center;
 
 }
 
-.top-menu{
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-margin-top:15px;
-
+.top-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 15px;
+    padding: 10px;
 }
 
-.top-menu a{
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
+.top-menu a {
+    flex: 0 0 auto;
+    color: white;
+    text-decoration: none;
 }
-
 .top-menu a:hover{
 
 color:yellow;
