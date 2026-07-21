@@ -2,7 +2,13 @@ button {
   background:green;
 }
 h1 { color:blue;}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+}
 body { background-color: white;} 
+
 Our contacts {
   margin-top: 20px;
   margin-bottom: 10px;
