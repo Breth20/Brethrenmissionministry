@@ -25,36 +25,27 @@ body{
 
 }
 
-header{
-
-background:#003366;
-
-color:white;
-
-padding:20px;
-
-text-align:center;
-
+header {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .top-menu {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 15px;
-    padding: 10px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .top-menu a {
-    flex: 0 0 auto;
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
-.top-menu a:hover{
 
-color:yellow;
-
+.menu-button {
+    display: none;   /* Hide the hamburger on desktop */
 }
 
 .container{
@@ -106,31 +97,32 @@ padding:10px 20px;
 font-size:16px;
 
 }
-@media (max-width:768px){
+@media (max-width: 768px) {
 
- .top-menu {
-        display: flex;
+    .menu-button {
+        display: block;
+        margin: 10px auto;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .top-menu {
+        display: none;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;;
-}
+        text-align: center;
+        gap: 10px;
+    }
 
-.container{
-    flex-direction:column;
-}
+    .top-menu.show {
+        display: flex;
+    }
 
-.sidebar{
-    width:100%;
-}
-
-main{
-    padding:20px;
-}
-
-header h1{
-    font-size:28px;
-}
-
+    .sidebar {
+        display: none;
+    }
 }
 img{
 
