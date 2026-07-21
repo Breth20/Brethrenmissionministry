@@ -15,3 +15,100 @@ Our contacts {
 .container {
   display: flex;
 }
+body{
+
+  margin:0;
+
+  font-family:Arial, sans-serif;
+
+}
+
+header{
+
+background:#003366;
+
+color:white;
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.top-menu{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin-top:15px;
+
+}
+
+.top-menu a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+.top-menu a:hover{
+
+color:yellow;
+
+}
+
+.container{
+
+display:flex;
+
+}
+
+.sidebar{
+
+width:250px;
+
+background:#eeeeee;
+
+padding:20px;
+
+}
+
+.sidebar a{
+
+display:block;
+
+padding:10px;
+
+text-decoration:none;
+
+color:black;
+
+}
+
+.sidebar a:hover{
+
+background:lightblue;
+
+}
+
+main{
+
+flex:1;
+
+padding:30px;
+
+}
+
+button{
+
+padding:10px 20px;
+
+font-size:16px;
+
+}
