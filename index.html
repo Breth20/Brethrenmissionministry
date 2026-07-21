@@ -1,18 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head><link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Brethren ministry</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brethren mission ministry</title>
 </head>
 <body>
-
-    <h1>Brethren mission ministry</h1>
+<header>
+<h1>Brethren mission ministry</h1>
+<nav class="top-menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Mission</a>
+<a href="#">Events</a>
+<a href="#">Join Us</a>
+<a href="#">Donate</a>
+</nav>
+</header>
+<div class="container">
+<aside class="sidebar">
+<h2>Our Ministry</h2>
+<a href="#">Literature Ministry</a>
+<a href="#">Community Care</a>
+<a href="#">Lay Evangelism</a>
+<a href="#">Digital Evangelism</a>
+<a href="#">Public Evangelism</a>
+<hr>
+<a href="#">Service Requests</a>
+<a href="#">Download Free Books</a>
+<a href="#">Contact Us</a>
+</aside>
+<main>
     <P>WELCOME!</P>
     <img src="Image.webp" alt="My photo" width="700" height="300">
     <hr>
-    <p>Our mission is to share the Word of God
-        and truth to others, all may Know God
-        and our savior Jesus Christ.</p>
+    <p>Welcome to Brethren Mission Ministry.We preach the everlasting gospel through literature evangelism, public preaching,
+social media evangelism and helping those in need.Our mission is to share the Word of God
+and truth to others, all may Know God and our savior Jesus Christ.
+</p>
     <h2> What we do</h2>
     <p><ol>
     <li>Mission through the method of distributing books such as True Sabbath, Matchless Love, etc.</li>
@@ -22,11 +47,14 @@
     <li>Evangelism through events,Preachings</li>
 </ol></p>
 <button id="myButton">Our contacts</button>
-<div class="container">
-  <div class="box">1</div>
-  <div class="box">2</div>
-  <div class="box">3</div>
+<button id="welcomeButton">
+Click Here
+</button>
+<p id="message"></p>
+</main>
 </div>
+<script src="script.js"></script>
+
 <a href="files/Tunalo Tumaini.pdf" target="_blank">View My Song</a>
 <script>
 let button = document.getElementById("myButton"); button.onclick = function() {
