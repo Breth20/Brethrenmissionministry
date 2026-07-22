@@ -51,11 +51,12 @@ header {
 
 .container {
     display: flex;
-    border: 3px solid red;
 }
+
 .sidebar {
     width: 250px;
-    background: yellow;
+    background: #eeeeee;
+    padding: 20px;
 }
 
 .sidebar a{
@@ -79,7 +80,7 @@ background:lightblue;
 main {
     flex: 1;
     padding: 30px;
-    background: lightblue;
+    background: white;
 }
 @media (max-width: 768px) {
 
