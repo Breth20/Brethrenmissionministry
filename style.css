@@ -111,8 +111,8 @@ background:#003366;
 padding:20px;
 }
 
-.mobile-menu.show{
-display:block;
+.mobile-menu.show {
+    display: block !important;
 }
 
 .mobile-menu a{
