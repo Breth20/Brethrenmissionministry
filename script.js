@@ -14,9 +14,7 @@ contactButton.onclick = function () {
         contactButton.textContent = "Our Contacts";
     }
 };
-let menuButton = document.getElementById("menuButton");
-let mobileMenu = document.getElementById("mobileMenu");
-
 menuButton.onclick = function () {
+    alert("Menu button clicked");
     mobileMenu.classList.toggle("show");
 };
