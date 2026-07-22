@@ -15,11 +15,8 @@ contactButton.onclick = function () {
     }
 };
 let menuButton = document.getElementById("menuButton");
+let mobileMenu = document.getElementById("mobileMenu");
 
-let topMenu = document.getElementById("topMenu");
-
-menuButton.onclick = function(){
-
-topMenu.classList.toggle("show");
-
-}
+menuButton.onclick = function () {
+    mobileMenu.classList.toggle("show");
+};
