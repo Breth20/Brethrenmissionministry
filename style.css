@@ -110,6 +110,7 @@ display:none;
     background:#003366;
     padding:20px;
     width:100%;
+    text-align:center;
 }
 
 .mobile-menu.show {
