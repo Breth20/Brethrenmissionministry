@@ -105,10 +105,11 @@ cursor:pointer;
 display:none;
 }
 
-.mobile-menu{
-display:none;
-background:#003366;
-padding:20px;
+.mobile-menu {
+    display:none;
+    background:#003366;
+    padding:20px;
+    width:100%;
 }
 
 .mobile-menu.show {
