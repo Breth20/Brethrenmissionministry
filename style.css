@@ -125,9 +125,12 @@ color:white;
 .mobile-menu h3{
 color:white;
 }
-
+.menu-button {
+    position: relative;
+    z-index: 1000;
 }
 
+}
 img{
 max-width:100%;
 height:auto;
