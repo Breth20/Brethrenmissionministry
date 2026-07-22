@@ -10,12 +10,12 @@ button {
 
 body { background-color: white;} 
 
-Our Contacts {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 20px;
+#contactButton {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
 }
 
 body{
@@ -45,6 +45,9 @@ header {
     font-weight: bold;
 }
 
+.mobile-menu{
+display:none;
+}
 .menu-button {
     display: none;   
 }
@@ -82,35 +85,50 @@ main {
     padding: 30px;
     background: white;
 }
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    .menu-button {
-        display: block;
-        margin: 10px auto;
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
+.top-menu{
+display:none;
+}
 
-    .top-menu {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
+.menu-button{
+display:block;
+margin:auto;
+font-size:30px;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+}
 
-    .top-menu.show {
-        display: flex;
-    }
+.sidebar{
+display:none;
+}
+
+.mobile-menu{
+display:none;
+background:#003366;
+padding:20px;
+}
+
+.mobile-menu.show{
+display:block;
+}
+
+.mobile-menu a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:white;
+}
+
+.mobile-menu h3{
+color:white;
+}
+
+}
 
 img{
 max-width:100%;
 height:auto;
-}
-.sidebar {
-        display: none;
-    }
-
 }
