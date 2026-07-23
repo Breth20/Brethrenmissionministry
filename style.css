@@ -92,6 +92,11 @@ main {
 
 .dropbtn {
     cursor: pointer;
+    padding: 10;
+}
+.dropbtn:hover{
+    background:lightblue;
+    border-radius:5px;
 }
 
 .dropdown-content {
@@ -164,6 +169,13 @@ color:white;
     padding:12px;
     cursor:pointer;
     text-align:center;
+}
+.mobile-dropdown-btn:hover{
+    background:#005599;
+}
+
+.mobile-dropdown-btn:focus{
+    background:#005599;
 }
 
 .mobile-dropdown-content{
