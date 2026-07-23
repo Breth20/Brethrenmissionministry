@@ -20,3 +20,13 @@ let mobileMenu = document.getElementById("mobileMenu");
 menuButton.onclick = function () {
     mobileMenu.classList.toggle("show");
 };
+
+let ministryButton = document.getElementById("ministryButton");
+
+let ministryMenu = document.getElementById("ministryMenu");
+
+ministryButton.onclick = function () {
+
+    ministryMenu.classList.toggle("show");
+
+};

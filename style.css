@@ -85,6 +85,23 @@ main {
     padding: 30px;
     background: white;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 @media (max-width:768px){
 
 .top-menu{
@@ -99,6 +116,12 @@ background:none;
 border:none;
 color:white;
 cursor:pointer;
+}
+
+header h1{
+    font-size:20px;
+    white-space:nowrap;
+    margin:0;
 }
 
 .sidebar{
@@ -131,6 +154,26 @@ color:white;
     background:#005599;
     border-radius:5px;
 }
+
+.mobile-dropdown-btn{
+    width:100%;
+    background:none;
+    border:none;
+    color:white;
+    font-size:18px;
+    padding:12px;
+    cursor:pointer;
+    text-align:center;
+}
+
+.mobile-dropdown-content{
+    display:none;
+}
+
+.mobile-dropdown-content.show{
+    display:block;
+}
+
 }
 img{
 max-width:100%;
