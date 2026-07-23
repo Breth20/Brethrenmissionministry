@@ -107,6 +107,23 @@ main {
     display: block;
 }
 
+form{
+    max-width:600px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    box-sizing:border-box;
+}
+
+label{
+    font-weight:bold;
+}
+
 @media (max-width:768px){
 
 .top-menu{
