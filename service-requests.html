@@ -4,8 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - Brethren Mission Ministry</title>
-
+    <title>Service Requests - Brethren Mission Ministry</title>
 </head>
 <body>
 <header>
@@ -21,6 +20,7 @@
 <a href="Events.html">Events</a>
 <a href="Join.html">Join Us</a>
 <a href="Donate.html">Donate</a>
+
 </nav>
 </header>
 
@@ -31,6 +31,7 @@
 <a href="Events.html">Events</a>
 <a href="Join.html">Join Us</a>
 <a href="Donate.html">Donate</a>
+
 <hr>
 
 <button class="mobile-dropdown-btn" id="ministryButton">
@@ -79,29 +80,61 @@
 <a href="service-requests.html">Service Requests</a>
 <a href="downloads.html">Download Free Books</a>
 <a href="contact.html">Contact Us</a>
-
 </aside>
 
 <main>
-    <h2>Upcoming Events</h2>
+   <h2>Service Requests</h2>
 
 <p>
-Welcome to our Events page. Here you can find information about upcoming 
-evangelistic meetings, seminars, Bible studies, community outreach programs, 
-literature distribution, and other ministry activities.
+If you would like Brethren Mission Ministry to support you or your community, please complete the form below.
 </p>
 
-<h3>Upcoming Programs</h3>
+<form>
 
-<ul>
-    <li>Community Evangelism</li>
-    <li>Literature Distribution</li>
-    <li>Bible Study Meetings</li>
-    <li>Youth Fellowship</li>
-    <li>Prayer Meetings</li>
-</ul>
+<label for="fullname">Full Name</label><br>
+<input type="text" id="fullname" name="fullname" required><br><br>
+
+<label for="phone">Phone Number</label><br>
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label for="email">Email Address</label><br>
+<input type="email" id="email" name="email"><br><br>
+
+<label for="location">Location</label><br>
+<input type="text" id="location" name="location"><br><br>
+
+<label for="request">Type of Request</label><br>
+
+<select id="request" name="request">
+
+<option>Book Donation</option>
+
+<option>Community Support</option>
+
+<option>Evangelism Invitation</option>
+
+<option>Bible Study Request</option>
+
+<option>Prayer Request</option>
+
+<option>Other</option>
+
+</select>
+
+<br><br>
+
+<label for="details">Please explain your request</label><br>
+
+<textarea id="details" rows="6"></textarea>
+
+<br><br>
+
+<button type="submit">Submit Request</button>
+
+</form>
 
 </main>
+
 </div>
 
 <script src="script.js"></script>
