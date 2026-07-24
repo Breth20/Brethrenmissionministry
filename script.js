@@ -29,12 +29,3 @@ if (menuButton && mobileMenu) {
         mobileMenu.classList.toggle("show");
     };
 }
-let ministryButton = document.getElementById("ministryButton");
-
-let ministryMenu = document.getElementById("ministryMenu");
-
-ministryButton.onclick = function () {
-
-    ministryMenu.classList.toggle("show");
-
-};

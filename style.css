@@ -171,32 +171,6 @@ color:white;
     border-radius:5px;
 }
 
-.mobile-dropdown-btn{
-    width:100%;
-    background:none;
-    border:none;
-    color:white;
-    font-size:18px;
-    padding:12px;
-    cursor:pointer;
-    text-align:center;
-}
-.mobile-dropdown-btn:hover{
-    background:#005599;
-}
-
-.mobile-dropdown-btn:focus{
-    background:#005599;
-}
-
-.mobile-dropdown-content{
-    display:none;
-}
-
-.mobile-dropdown-content.show{
-    display:block;
-}
-
 }
 img{
 max-width:100%;
