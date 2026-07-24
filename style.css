@@ -36,7 +36,7 @@ header {
 .top-menu {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .top-menu a {
