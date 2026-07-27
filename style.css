@@ -104,20 +104,19 @@ li{
 margin-bottom:12px;
 }
 
-.center-section{
-text-align:center;
-}
-.center-section ul{
-list-style-position:inside;
-padding-left:0;
-}
-
 .content-card{
 background:white;
 padding:30px;
 margin-bottom:30px;
 border-radius:12px;
 box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.content-card ul{
+padding-left:25px;
+}
+
+.content-card li{
+margin-bottom:12px;
 }
 
 a{
