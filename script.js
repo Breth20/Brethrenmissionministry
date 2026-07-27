@@ -7,3 +7,11 @@ if (menuButton && mobileMenu) {
         mobileMenu.classList.toggle("show");
     };
 }
+
+const languageSelectors = document.querySelectorAll("select");
+languageSelectors.forEach(function(selector){
+selector.addEventListener("change", function(){
+let language = this.value;
+alert("Selected language: " + language);
+});
+});
