@@ -296,6 +296,9 @@ border:none;
 cursor:pointer;
 font-size:14px;
 }
+.language-selector{
+margin-left:0;
+}
 .mobile-language-selector{
 margin:20px 0;
 text-align:center;
@@ -303,8 +306,9 @@ text-align:center;
 
 .header-tools{
 display:flex;
-justify-content:space-between;
+justify-content:flex-end;
 align-items:center;
+gap:15px;
 padding:10px 20px;
 }
 
@@ -385,6 +389,14 @@ margin-top:20px;
 .mobile-tools .member-button{
 display:inline-block;
 margin-bottom:15px;
+}
+
+.mobile-tools{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+margin-top:20px;
 }
 
 }
