@@ -17,14 +17,6 @@ transform:translateY(-2px);
 
 body { background-color: white;} 
 
-#contactButton {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -285,6 +277,14 @@ transition:0.3s;
 .whatsapp-button:hover{
 background:#1da851;
 color:white;
+}
+
+.contact-buttons{
+text-align:center;
+margin-top:30px;
+}
+.contact-buttons p{
+margin-bottom:15px;
 }
 
 @media (max-width:768px){
