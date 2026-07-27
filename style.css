@@ -301,6 +301,26 @@ margin:20px 0;
 text-align:center;
 }
 
+.header-tools{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 20px;
+}
+
+
+.member-button{
+background:#006400;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+text-decoration:none;
+}
+
+.member-button:hover{
+background:#004d00;
+}
+
 @media (max-width:768px){
 
 .top-menu{
@@ -355,11 +375,16 @@ color:white;
 }
 
 .footer-container{
-
 flex-direction:column;
-
 text-align:center;
-
+}
+.mobile-tools{
+text-align:center;
+margin-top:20px;
+}
+.mobile-tools .member-button{
+display:inline-block;
+margin-bottom:15px;
 }
 
 }
