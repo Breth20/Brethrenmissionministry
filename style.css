@@ -270,6 +270,23 @@ form button{
 margin-top:20px;
 }
 
+.whatsapp-button{
+display:inline-block;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:12px 24px;
+border-radius:8px;
+font-weight:bold;
+margin-top:20px;
+transition:0.3s;
+}
+
+.whatsapp-button:hover{
+background:#1da851;
+color:white;
+}
+
 @media (max-width:768px){
 
 .top-menu{
