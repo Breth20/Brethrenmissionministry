@@ -104,6 +104,14 @@ li{
 margin-bottom:12px;
 }
 
+.center-section{
+text-align:center;
+}
+.center-section ul{
+list-style-position:inside;
+padding-left:0;
+}
+
 .content-card{
 background:white;
 padding:30px;
