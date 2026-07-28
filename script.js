@@ -55,6 +55,7 @@ if(bookSearch){
 bookSearch.addEventListener("keyup", function(){
 let searchValue = this.value.toLowerCase();
 let books = document.querySelectorAll(".book-card");
+console.log(books.length);
 books.forEach(function(book){
 let title = book.innerText.toLowerCase();
 if(title.includes(searchValue)){
