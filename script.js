@@ -1,3 +1,4 @@
+console.log("Script loaded");
 
 let menuButton = document.getElementById("menuButton");
 let mobileMenu = document.getElementById("mobileMenu");
