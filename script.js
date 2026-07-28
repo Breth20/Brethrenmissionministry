@@ -1,4 +1,3 @@
-console.log("Script loaded");
 
 let menuButton = document.getElementById("menuButton");
 let mobileMenu = document.getElementById("mobileMenu");
@@ -52,6 +51,7 @@ if (backToTop) {
 }
 
 let bookSearch = document.getElementById("bookSearch");
+console.log(bookSearch);
 if(bookSearch){
 bookSearch.addEventListener("keyup", function(){
 let searchValue = this.value.toLowerCase();
