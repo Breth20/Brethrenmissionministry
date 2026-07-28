@@ -311,28 +311,72 @@ text-align:center;
 
 .header-tools{
 display:flex;
-justify-content:center;
+justify-content:flex-end;
 align-items:center;
-gap:20px;
+gap:15px;
 padding:10px 20px;
+width:100%;
+box-sizing:border-box;
 }
 
 .member-button{
+display:inline-block;
 background:#006400;
 color:white;
 padding:8px 15px;
 border-radius:6px;
 text-decoration:none;
+margin:0;
 }
-
-.member-button{
-display:inline-block;
-min-width:150px;
-text-align:center;
-}
-
 .member-button:hover{
 background:#004d00;
+}
+
+#backToTop{
+display:none;
+position:fixed;
+bottom:30px;
+right:25px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#006400;
+color:white;
+font-size:24px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+z-index:999;
+}
+#backToTop:hover{
+background:#004d00;
+transform:translateY(-3px);
+}
+
+.news-section{
+margin-top:50px;
+margin-bottom:50px;
+}
+.news-card{
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+border-left:6px solid #0a7d2c;
+transition:0.3s;
+}
+.news-card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+.news-card h3{
+margin-top:0;
+color:#003366;
+}
+.news-card p{
+margin:10px 0;
 }
 
 @media (max-width:768px){
