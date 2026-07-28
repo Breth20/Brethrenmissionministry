@@ -49,3 +49,20 @@ if (backToTop) {
         });
     });
 }
+
+let bookSearch = document.getElementById("bookSearch");
+if(bookSearch){
+bookSearch.addEventListener("keyup", function(){
+let searchValue = this.value.toLowerCase();
+let books = document.querySelectorAll(".book-card");
+books.forEach(function(book){
+let title = book.innerText.toLowerCase();
+if(title.includes(searchValue)){
+    book.style.display = "block";
+}
+else{
+    book.style.display = "none";
+}
+});
+});
+}
