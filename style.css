@@ -337,23 +337,28 @@ background:#004d00;
 #backToTop{
 display:none;
 position:fixed;
-bottom:30px;
+bottom:25px;
 right:25px;
-width:50px;
-height:50px;
+width:55px;
+height:55px;
 border:none;
 border-radius:50%;
-background:#006400;
+background:#0a7d2c;
 color:white;
-font-size:24px;
+font-size:25px;
 cursor:pointer;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 transition:0.3s;
-z-index:999;
+z-index:9999;
+
+display:flex;
+align-items:center;
+justify-content:center;
 }
+
 #backToTop:hover{
-background:#004d00;
-transform:translateY(-3px);
+background:#085f21;
+transform:translateY(-5px);
 }
 
 .news-section{
