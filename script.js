@@ -51,19 +51,17 @@ if (backToTop) {
 }
 
 let bookSearch = document.getElementById("bookSearch");
-console.log(bookSearch);
 if(bookSearch){
-bookSearch.addEventListener("keyup", function(){
+bookSearch.addEventListener("input", function(){
 let searchValue = this.value.toLowerCase();
 let books = document.querySelectorAll(".book-card");
-console.log(books.length);
 books.forEach(function(book){
-let title = book.innerText.toLowerCase();
+let title = book.querySelector("h3").innerText.toLowerCase();
 if(title.includes(searchValue)){
-    book.style.display = "block";
+    book.classList.remove("hidden-book");
 }
 else{
-    book.style.display = "none";
+    book.classList.add("hidden-book");
 }
 });
 });

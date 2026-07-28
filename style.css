@@ -347,7 +347,9 @@ border:1px solid #ccc;
 border-radius:8px;
 box-sizing:border-box;
 }
-
+.hidden-book{
+    display:none;
+}
 .book-search input:focus{
 outline:none;
 border-color:#0a7d2c;
