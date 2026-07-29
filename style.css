@@ -539,6 +539,12 @@ transform:translateY(0);
 .stagger:nth-child(4){transition-delay:0.7s;}
 .stagger:nth-child(5){transition-delay:0.9s;}
 
+.paypal-email a{
+    display:inline-block;
+    max-width:100%;
+    overflow-wrap:anywhere;
+}
+
 img{
 display:block;
 max-width:100%;
