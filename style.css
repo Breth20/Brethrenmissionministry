@@ -551,6 +551,10 @@ gap:15px;
 flex-wrap:wrap;
 margin-top:20px;
 }
+.social-links a i{
+margin-right:8px;
+font-size:18px;
+}
 
 img{
 display:block;
