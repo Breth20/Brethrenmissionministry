@@ -419,6 +419,11 @@ color:#003366;
 margin-top:0;
 }
 
+.content-card{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
 @media (max-width:768px){
 
 .top-menu{
