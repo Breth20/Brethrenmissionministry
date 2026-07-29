@@ -424,6 +424,40 @@ margin-top:0;
     word-wrap: break-word;
 }
 
+.event-calendar{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+text-align:center;
+}
+
+.event-calendar th{
+background:#0a7d2c;
+color:white;
+padding:12px;
+}
+
+.event-calendar td{
+border:1px solid #ddd;
+padding:15px;
+height:70px;
+vertical-align:top;
+}
+
+.event-day{
+background:#ffe082;
+font-weight:bold;
+color:#0a7d2c;
+border:2px solid #0a7d2c;
+}
+
+.event-day small{
+display:block;
+margin-top:5px;
+font-size:12px;
+color:#333;
+}
+
 @media (max-width:768px){
 
 .top-menu{
@@ -554,6 +588,16 @@ margin-top:20px;
 .social-links a i{
 margin-right:8px;
 font-size:18px;
+}
+
+.event-calendar th,
+.event-calendar td{
+padding:8px;
+font-size:12px;
+height:55px;
+}
+.event-day small{
+font-size:10px;
 }
 
 img{
