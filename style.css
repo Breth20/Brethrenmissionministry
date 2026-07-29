@@ -545,6 +545,13 @@ transform:translateY(0);
     overflow-wrap:anywhere;
 }
 
+.social-links{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
 img{
 display:block;
 max-width:100%;
