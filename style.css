@@ -604,12 +604,11 @@ footer{
 
 .zoom-buttons{
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     gap:15px;
     flex-wrap:wrap;
 }
-
 
 /* =========================
    EVENT DETAILS
