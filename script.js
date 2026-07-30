@@ -214,6 +214,7 @@ generateCalendar(currentDate);
 // =======================================
 
 const pageMap = {
+
     // English → Swahili
     "index.html": "Mwanzo.html",
     "about.html": "Kuhusu Sisi.html",
@@ -236,44 +237,38 @@ const pageMap = {
     "Changia Huduma.html": "Donate.html",
     "Wasiliana Nasi.html": "contact.html"
 };
+const swahiliPages = [
+
+    "Mwanzo.html",
+    "Kuhusu Sisi.html",
+    "Huduma Yetu.html",
+    "Matukio.html",
+    "Maombi ya Huduma.html",
+    "Pakua Vitabu Bila Malipo.html",
+    "Jiunge Nasi.html",
+    "Changia Huduma.html",
+    "Wasiliana Nasi.html"
+];
 function setupLanguageSwitcher(selectId) {
     const selector = document.getElementById(selectId);
     if (!selector) return;
     const currentPage = window.location.pathname.split("/").pop();
-    // Set the correct language automatically
-    if ([
-        "Mwanzo.html",
-        "Kuhusu Sisi.html",
-        "Huduma Yetu.html",
-        "Matukio.html",
-        "Maombi ya Huduma.html",
-        "Pakua Vitabu Bila Malipo.html",
-        "Jiunge Nasi.html",
-        "Changia Huduma.html",
-        "Wasiliana Nasi.html"
-    ].includes(currentPage)) {
-        selector.value = "sw";
-    } else {
-        selector.value = "en";
-    }
+    // Show the correct language in the selector
+    selector.value = swahiliPages.includes(currentPage) ? "sw" : "en";
+
+    // Change page ONLY when the user changes the selector
     selector.addEventListener("change", function () {
-        const target = pageMap[currentPage];
-        if (!target) return;
-        if (this.value === "en") {
-            if (currentPage !== target &&
-                target.endsWith(".html") &&
-                !currentPage.endsWith(target)) {
-                // Swahili → English
-                if (currentPage in pageMap) {
-                    window.location.href = target;
-                }
-            }
+        const targetPage = pageMap[currentPage];
+        if (!targetPage) return;
+
+        // Don't reload the same page
+        if (
+            (this.value === "en" && !swahiliPages.includes(currentPage)) ||
+            (this.value === "sw" && swahiliPages.includes(currentPage))
+        ) {
+            return;
         }
-        if (this.value === "sw") {
-            if (currentPage in pageMap) {
-                window.location.href = target;
-            }
-        }
+        window.location.href = targetPage;
     });
 }
 setupLanguageSwitcher("languageSelect");
