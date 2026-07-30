@@ -204,72 +204,77 @@ generateCalendar(currentDate);
 // LANGUAGE SWITCHER
 // =======================================
 
-const pageMap={
-    // English → Swahili
-    "index.html":"mwanzo.html",
-    "about.html":"kuhusu-sisi.html",
-    "ministry.html":"huduma-yetu.html",
-    "Events.html":"matukio.html",
-    "service-requests.html":"maombi-ya-huduma.html",
-    "downloads.html":"pakua-vitabu-bila-malipo.html",
-    "Join.html":"jiunge-nasi.html",
-    "Donate.html":"changia-huduma.html",
-    "contact.html":"wasiliana-nasi.html",
+const pageMap = {
 
-    // Swahili → English
-    "mwanzo.html":"index.html",
-    "kuhusu-sisi.html":"about.html",
-    "huduma-yetu.html":"ministry.html",
-    "matukio.html":"Events.html",
-    "maombi-ya-huduma.html":"service-requests.html",
-    "pakua-vitabu-bila-malipo.html":"downloads.html",
-    "jiunge-nasi.html":"Join.html",
-    "changia-huduma.html":"Donate.html",
-    "wasiliana-nasi.html":"contact.html"
+    // English → Kiswahili
+    "index.html":"Mwanzo.html",
+    "About.html":"Kuhusu-Sisi.html",
+    "Ministry.html":"Huduma-Yetu.html",
+    "Events.html":"Matukio.html",
+    "Service-Requests.html":"Maombi-ya-Huduma.html",
+    "Downloads.html":"Pakua-Vitabu-Bila-Malipo.html",
+    "Join.html":"Jiunge-Nasi.html",
+    "Donate.html":"Changia-Huduma.html",
+    "Contact.html":"Wasiliana-Nasi.html",
+    "MemberLogin.html":"Ingia-Kwenye-Account.html",
+
+
+    // Kiswahili → English
+    "Mwanzo.html":"index.html",
+    "Kuhusu-Sisi.html":"About.html",
+    "Huduma-Yetu.html":"Ministry.html",
+    "Matukio.html":"Events.html",
+    "Maombi-ya-Huduma.html":"Service-Requests.html",
+    "Pakua-Vitabu-Bila-Malipo.html":"Downloads.html",
+    "Jiunge-Nasi.html":"Join.html",
+    "Changia-Huduma.html":"Donate.html",
+    "Wasiliana-Nasi.html":"Contact.html",
+    "Ingia-Kwenye-Account.html":"MemberLogin.html"
+
 };
 
 const swahiliPages=[
-    "mwanzo.html",
-    "kuhusu-sisi.html",
-    "huduma-yetu.html",
-    "matukio.html",
-    "maombi-ya-huduma.html",
-    "pakua-vitabu-bila-malipo.html",
-    "jiunge-nasi.html",
-    "changia-huduma.html",
-    "wasiliana-nasi.html"
+    "Mwanzo.html",
+    "Kuhusu-Sisi.html",
+    "Huduma-Yetu.html",
+    "Matukio.html",
+    "Maombi-ya-Huduma.html",
+    "Pakua-Vitabu-Bila-Malipo.html",
+    "Jiunge-Nasi.html",
+    "Changia-Huduma.html",
+    "Wasiliana-Nasi.html",
+    "Ingia-Kwenye-Account.html"
 ];
 
-function setupLanguageSwitcher(selectId){
 
-    const selector=document.getElementById(selectId);
+function setupLanguageSwitcher(id){
+
+    const selector=document.getElementById(id);
+
     if(!selector)return;
 
-    const currentPage=decodeURIComponent(
+
+    const currentPage=
+    decodeURIComponent(
         window.location.pathname.split("/").pop()
     );
 
-    selector.value=swahiliPages.includes(currentPage)?"sw":"en";
 
-    selector.addEventListener("change",function(){
+    selector.value=
+    swahiliPages.includes(currentPage)
+    ?"sw"
+    :"en";
 
-        const selectedLanguage=this.value;
-        const isSwahili=swahiliPages.includes(currentPage);
 
-        if(
-            (selectedLanguage==="en"&&!isSwahili)||
-            (selectedLanguage==="sw"&&isSwahili)
-        ){
-            return;
+    selector.onchange=function(){
+
+        const target=pageMap[currentPage];
+
+        if(target){
+            window.location.href=target;
         }
 
-        const targetPage=pageMap[currentPage];
-
-        if(targetPage){
-            window.location.href=targetPage;
-        }
-
-    });
+    };
 
 }
 
