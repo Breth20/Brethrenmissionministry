@@ -645,6 +645,21 @@ footer{
     border-radius:4px;
 }
 
+/* =========================
+   GOOGLE TRANSLATE LANGUAGE SELECTOR
+========================= */
+
+.goog-te-gadget{
+    font-family:Arial, sans-serif !important;
+}
+
+.goog-te-gadget select{
+    padding:8px 12px;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+}
 
 /* =========================
    MOBILE RESPONSIVE DESIGN
