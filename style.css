@@ -517,11 +517,11 @@ background:#bfe3ff;
 
 .zoom-buttons{
     display:flex;
-    gap:10px;
-    flex-wrap:wrap;
     justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
 }
-
 .empty-day{
 background:#f9f9f9;
 }
