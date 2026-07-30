@@ -208,3 +208,73 @@ currentDate=new Date();
 generateCalendar(currentDate);
 });
 }
+
+// =======================================
+// LANGUAGE SWITCHER
+// =======================================
+
+const pageMap = {
+    // English → Swahili
+    "index.html": "Mwanzo.html",
+    "about.html": "Kuhusu Sisi.html",
+    "ministry.html": "Huduma Yetu.html",
+    "Events.html": "Matukio.html",
+    "service-requests.html": "Maombi ya Huduma.html",
+    "downloads.html": "Pakua Vitabu Bila Malipo.html",
+    "Join.html": "Jiunge Nasi.html",
+    "Donate.html": "Changia Huduma.html",
+    "contact.html": "Wasiliana Nasi.html",
+
+    // Swahili → English
+    "Mwanzo.html": "index.html",
+    "Kuhusu Sisi.html": "about.html",
+    "Huduma Yetu.html": "ministry.html",
+    "Matukio.html": "Events.html",
+    "Maombi ya Huduma.html": "service-requests.html",
+    "Pakua Vitabu Bila Malipo.html": "downloads.html",
+    "Jiunge Nasi.html": "Join.html",
+    "Changia Huduma.html": "Donate.html",
+    "Wasiliana Nasi.html": "contact.html"
+};
+function setupLanguageSwitcher(selectId) {
+    const selector = document.getElementById(selectId);
+    if (!selector) return;
+    const currentPage = window.location.pathname.split("/").pop();
+    // Set the correct language automatically
+    if ([
+        "Mwanzo.html",
+        "Kuhusu Sisi.html",
+        "Huduma Yetu.html",
+        "Matukio.html",
+        "Maombi ya Huduma.html",
+        "Pakua Vitabu Bila Malipo.html",
+        "Jiunge Nasi.html",
+        "Changia Huduma.html",
+        "Wasiliana Nasi.html"
+    ].includes(currentPage)) {
+        selector.value = "sw";
+    } else {
+        selector.value = "en";
+    }
+    selector.addEventListener("change", function () {
+        const target = pageMap[currentPage];
+        if (!target) return;
+        if (this.value === "en") {
+            if (currentPage !== target &&
+                target.endsWith(".html") &&
+                !currentPage.endsWith(target)) {
+                // Swahili → English
+                if (currentPage in pageMap) {
+                    window.location.href = target;
+                }
+            }
+        }
+        if (this.value === "sw") {
+            if (currentPage in pageMap) {
+                window.location.href = target;
+            }
+        }
+    });
+}
+setupLanguageSwitcher("languageSelect");
+setupLanguageSwitcher("mobileLanguageSelect");
