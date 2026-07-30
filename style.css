@@ -229,9 +229,10 @@ margin-top:20px;
     text-decoration:none;
     padding:10px 20px;
     border-radius:5px;
-    margin-right:10px;
+    margin:5px;
+    text-align:center;
+    box-sizing:border-box;
 }
-
 .button-link:hover{
     background:#006400;
 }
@@ -515,10 +516,10 @@ background:#bfe3ff;
 }
 
 .zoom-buttons{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-margin:20px 0;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .empty-day{
@@ -698,11 +699,12 @@ height:55px;
 }
 
 .zoom-buttons{
-flex-direction:column;
+    flex-direction:column;
 }
 .zoom-buttons .button-link{
-width:100%;
-text-align:center;
+    display:block;
+    width:100%;
+    margin:5px 0;
 }
 
 img{
