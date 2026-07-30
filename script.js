@@ -76,6 +76,22 @@ const todayBtn = document.getElementById("todayBtn");
 
 if(monthYear && calendarBody){
 let currentDate = new Date();
+const events = {
+    "2026-08-30": {
+        title: "📖 Matchless Love Literature Distribution",
+        location: "Misufini, Namtumbo, Tanzania",
+        time: "8:00 AM - 5:00 PM",
+        category: "Literature Evangelism",
+        button: "Join.html"
+    },
+    "2026-08-31": {
+        title: "📖 Matchless Love Literature Distribution",
+        location: "Hamuyebe, Ukerewe, Tanzania",
+        time: "8:00 AM - 5:00 PM",
+        category: "Literature Evangelism",
+        button: "Join.html"
+    }
+};
 function generateCalendar(date){
 calendarBody.innerHTML="";
 const year = date.getFullYear();
@@ -99,7 +115,65 @@ row.appendChild(empty);
 const today=new Date();
 for(let day=1;day<=lastDate;day++){
 let cell=document.createElement("td");
+const weekDay = new Date(year, month, day).getDay();
 cell.textContent=day;
+const dateKey =
+year + "-" +
+String(month + 1).padStart(2, "0") + "-" +
+String(day).padStart(2, "0");
+if(events[dateKey]){
+    cell.classList.add("event-day");
+    cell.addEventListener("click", function(){
+        const event = events[dateKey];
+        document.getElementById("eventDetails").innerHTML = `
+            <h2>${event.title}</h2>
+            <p><strong>📅 Date:</strong> ${day} ${monthNames[month]} ${year}</p>
+            <p><strong>📍 Location:</strong> ${event.location}</p>
+            <p><strong>🕘 Time:</strong> ${event.time}</p>
+            <p><strong>🏷 Category:</strong> ${event.category}</p>
+            <p>
+                <a href="${event.button}" class="button-link">
+                    Join This Mission
+                </a>
+            </p>
+        `;
+        document.getElementById("eventDetails").scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+}
+if(weekDay === 5 && !events[dateKey]){
+    cell.classList.add("zoom-day");
+    cell.addEventListener("click", function(){
+        document.getElementById("eventDetails").innerHTML = `
+        <h2>💻 Weekly Online Fellowship & Prayer Meeting</h2>
+        <p><strong>📅 Schedule:</strong> Every Friday</p>
+        <p><strong>🕘 Time:</strong> 9:00 PM East Africa Time (EAT)</p>
+        <p><strong>Meeting ID:</strong> 830 0666 5044</p>
+        <p><strong>Passcode:</strong> 8DbRnh</p>
+        <p>
+        <a href="https://us05web.zoom.us/j/83006665044?pwd=21lFx9Ru7wfHDSYSY1krI022LXFdgK.1"
+        target="_blank"
+        class="button-link">
+        🎥 Join Zoom Meeting
+        </a>
+        </p>
+        <p>
+        <a href="https://us05web.zoom.us/meeting/tZctd--uqD4qHtBf5fgVGnx5k3_xFjkt_QhT/ics?icsToken=DINuTiPTFHBk51K9sQAALAAAAITfmMCETmeFI2N63dAuw2Dr8Yb1zdiFaflwS3aSnTzHrp9aWFDuqAz6KGrczJHwYTuOWxLo5dQQAeHRzDAwMDAwMQ&meetingMasterEventId=hakwLq8mTkqTuQayMO2BSg"
+        target="_blank"
+        class="button-link">
+        📅 Add to My Calendar
+        </a>
+        </p>
+        <p>
+        Everyone is welcome to join our weekly fellowship for worship, prayer, Bible study, and ministry updates.
+        </p>
+        `;
+        document.getElementById("eventDetails").scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+}
 if(
 day===today.getDate() &&
 month===today.getMonth() &&
