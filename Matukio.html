@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brethren Mission Ministry</title>
+</head>
+
+<body>
+
+<header>
+
+<h1>Brethren Mission Ministry</h1>
+
+<button class="menu-button" id="menuButton">
+    ☰
+</button>
+
+<nav class="top-menu" id="topMenu">
+
+<a href="Mwanzo.html">Mwanzo</a>
+<a href="Kuhusu Sisi.html">Kuhusu Sisi</a>
+<a href="Huduma Yetu.html">Huduma Yetu</a>
+<a href="Matukio.html">Matukio</a>
+<a href="Maombi ya Huduma.html">Maombi ya Huduma</a>
+<a href="Pakua Vitabu Bila Malipo.html">Pakua Vitabu Bila Malipo</a>
+<a href="Jiunge Nasi.html">Jiunge Nasi</a>
+<a href="Changia Huduma.html">Changia Huduma</a>
+<a href="Wasiliana Nasi.html">Wasiliana Nasi</a>
+
+</nav>
+
+<div class="header-tools">
+
+<a href="MemberLogin.html" class="member-button">
+Ingia Kwenye Account
+</a>
+
+<div class="language-selector">
+
+<select id="languageSelect">
+
+<option value="en">🌐 English</option>
+<option value="sw" selected>🇹🇿 Kiswahili</option>
+
+</select>
+
+</div>
+
+</div>
+
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+
+<a href="Mwanzo.html">Mwanzo</a>
+<a href="Kuhusu Sisi.html">Kuhusu Sisi</a>
+<a href="Matukio.html">Matukio</a>
+<a href="Jiunge Nasi.html">Jiunge Nasi</a>
+<a href="Changia Huduma.html">Changia Huduma</a>
+
+<hr>
+
+<a href="Huduma Yetu.html">Huduma Yetu</a>
+
+<hr>
+
+<a href="Maombi ya Huduma.html">Maombi ya Huduma</a>
+<a href="Pakua Vitabu Bila Malipo.html">Pakua Vitabu Bila Malipo</a>
+<a href="Wasiliana Nasi.html">Wasiliana Nasi</a>
+
+<div class="mobile-tools">
+
+<a href="MemberLogin.html" class="member-button">
+Ingia Kwenye Account
+</a>
+
+<div class="language-selector">
+
+<select id="mobileLanguageSelect">
+
+<option value="en">🌐 English</option>
+<option value="sw" selected>🇹🇿 Kiswahili</option>
+
+</select>
+
+</div>
+
+</div>
+
+</nav>
+
+<div class="container">
+
+<main>
+
+<h2>Misheni na Matukio Yanayokuja</h2>
+
+<p>
+Brethren Mission Ministry huandaa shughuli za uinjilisti, usambazaji wa fasihi, huduma kwa jamii, programu za mafundisho ya Biblia, na miradi mingine ya kimisheni kwa ajili ya kushiriki Injili ya milele ya Yesu Kristo. Hapa chini unaweza kuona misheni zetu zijazo na fursa mbalimbali za kushiriki pamoja nasi.
+</p>
+
+<div class="content-card">
+
+<h2>📅 Kalenda ya Matukio ya Huduma</h2>
+
+<p>
+Angalia kalenda yetu ya huduma ili kuona misheni za uinjilisti, programu za usambazaji wa fasihi, na ushirika wetu wa kila wiki kwa njia ya Zoom. Bofya tarehe yoyote iliyoangaziwa ili kuona maelezo yake.
+</p>
+
+<div class="calendar-header">
+
+<button id="prevMonth" class="calendar-btn">
+◀ Mwezi Uliopita
+</button>
+
+<h3 id="monthYear"></h3>
+
+<button id="nextMonth" class="calendar-btn">
+Mwezi Ujao ▶
+</button>
+
+</div>
+
+<div class="calendar-today">
+
+<button id="todayBtn" class="button-link">
+Leo
+</button>
+
+</div>
+
+<table class="event-calendar">
+
+<thead>
+
+<tr>
+
+<th>Jpl</th>
+<th>Jtt</th>
+<th>Jnn</th>
+<th>Jtn</th>
+<th>Alh</th>
+<th>Ijm</th>
+<th>Jms</th>
+
+</tr>
+
+</thead>
+
+<tbody id="calendarBody">
+
+</tbody>
+
+</table>
+
+<div class="calendar-legend">
+
+<span class="legend-item">
+
+<span class="legend-box today"></span>
+
+Leo
+
+</span>
+
+<span class="legend-item">
+
+<span class="legend-box event-day"></span>
+
+Tukio la Misheni
+
+</span>
+
+<span class="legend-item">
+
+<span class="legend-box zoom-day"></span>
+
+Ushirika wa Zoom wa Kila Wiki
+
+</span>
+
+</div>
+
+</div>
+
+<div class="content-card" id="eventDetails">
+
+<h2>📖 Maelezo ya Matukio</h2>
+
+<p>
+Bofya tarehe yoyote iliyoangaziwa kwenye kalenda ili kuona maelezo ya matukio ya huduma na ushirika.
+</p>
+
+</div>
+
+<div class="content-card">
+
+<h2>💻 Mikutano ya Kila Wiki Kupitia Zoom</h2>
+
+<p>
+Brethren Mission Ministry inawakaribisha kwa moyo wote wanachama, marafiki, na wadau wote kujiunga nasi katika mkutano wetu wa kila wiki kupitia Zoom kila Ijumaa. Mkutano huu ni fursa ya kuombeana, kujadili shughuli za huduma, na kutiana moyo tunapojiandaa kwa ajili ya misheni.
+</p>
+
+<p>
+
+<strong>📅 Ratiba:</strong> Kila Ijumaa<br>
+
+<strong>🕘 Muda:</strong> Saa 3:00 Usiku (EAT)
+
+</p>
+
+<p>
+
+<strong>Kitambulisho cha Mkutano:</strong> 830 0666 5044<br>
+
+<strong>Neno la Siri:</strong> 8DbRnh
+
+</p>
+
+<div class="zoom-buttons">
+
+<a href="https://us05web.zoom.us/j/83006665044?pwd=21lFx9Ru7wfHDSYSY1krI022LXFdgK.1"
+target="_blank"
+class="button-link">
+
+🎥 Jiunge na Mkutano wa Zoom
+
+</a>
+
+<a href="https://us05web.zoom.us/meeting/tZctd--uqD4qHtBf5fgVGnx5k3_xFjkt_QhT/ics?icsToken=DINuTiPTFHBk51K9sQAALAAAAITfmMCETmeFI2N63dAuw2Dr8Yb1zdiFaflwS3aSnTzHrp9aWFDuqAz6KGrczJHwYTuOWxLo5dQQAeHRzDAwMDAwMDAwMQ&meetingMasterEventId=hakwLq8mTkqTuQayMO2BSg"
+target="_blank"
+class="button-link">
+
+📅 Ongeza Kwenye Kalenda Yangu
+
+</a>
+
+</div>
+
+<p>
+Iwe wewe ni mwanachama wa huduma yetu au unajiunga nasi kwa mara ya kwanza, unakaribishwa kwa moyo wote.
+</p>
+
+</div>
+
+<div class="content-card">
+
+<h2>📖 Usambazaji wa Fasihi ya Matchless Love</h2>
+
+<p>
+<strong>📅 Tarehe:</strong> 30 Agosti 2026
+</p>
+
+<p>
+<strong>⏰ Muda:</strong> Saa 2:00 Asubuhi - Saa 11:00 Jioni
+</p>
+
+<p>
+<strong>📍 Mahali:</strong> Misufini, Namtumbo, Tanzania
+</p>
+
+<p>
+<strong>🏷️ Kundi:</strong> Uinjilisti wa Fasihi
+</p>
+
+<p>
+Jiunge nasi tunaposhiriki Injili ya milele kupitia usambazaji wa fasihi ya <strong>Matchless Love</strong> kwa jamii ya Misufini. Kupitia misheni hii tunalenga kuleta tumaini, faraja, na ujumbe wa wokovu kwa kila familia.
+</p>
+
+<a href="Jiunge Nasi.html" class="button-link">
+Jiunge na Misheni Hii
+</a>
+
+</div>
+
+<div class="content-card">
+
+<h2>📖 Usambazaji wa Fasihi ya Matchless Love</h2>
+
+<p>
+<strong>📅 Tarehe:</strong> 30 Agosti 2026
+</p>
+
+<p>
+<strong>⏰ Muda:</strong> Saa 2:00 Asubuhi - Saa 11:00 Jioni
+</p>
+
+<p>
+<strong>📍 Mahali:</strong> Hamuyeb, Ukerewe, Tanzania
+</p>
+
+<p>
+<strong>🏷️ Kundi:</strong> Uinjilisti wa Fasihi
+</p>
+
+<p>
+Shiriki nasi katika kazi hii ya uinjilisti tunaposambaza fasihi ya <strong>Matchless Love</strong> katika eneo la Hamuyeb, tukitangaza upendo wa Mungu na kuwaalika watu kumjua Yesu Kristo.
+</p>
+
+<a href="Jiunge Nasi.html" class="button-link">
+Jiunge na Misheni Hii
+</a>
+
+</div>
+
+<div class="content-card">
+
+<h2>🙏 Jiunge na Shughuli Zetu za Misheni</h2>
+
+<p>
+Kila mtu anakaribishwa kushiriki katika shughuli za Brethren Mission Ministry kupitia maombi, kujitolea kuhudumu, Uinjilisti wa Fasihi, huduma kwa jamii, na kuunga mkono miradi ya misheni.
+</p>
+
+<p>
+Kwa pamoja tunaweza kuendelea kueneza Injili ya milele na kuwafikia watu wengi zaidi kwa upendo wa Kristo.
+</p>
+
+<a href="Jiunge Nasi.html" class="button-link">
+Kuwa Sehemu ya Misheni Yetu
+</a>
+
+</div>
+
+</main>
+
+</div>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-column">
+
+<h3>Brethren Mission Ministry</h3>
+
+<p>
+Shiriki Injili kupitia Kugawa Vitabu,
+Uinjilisti wa Hadhara na Huduma za Kuwafikia Wahitaji.
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="Mwanzo.html">Mwanzo</a>
+<a href="Kuhusu Sisi.html">Kuhusu Sisi</a>
+<a href="Huduma Yetu.html">Huduma Yetu</a>
+<a href="Matukio.html">Matukio</a>
+<a href="Jiunge Nasi.html">Jiunge Nasi</a>
+<a href="Changia Huduma.html">Changia Huduma</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Wasiliana Nasi</h3>
+
+<p>
+📞
+<a href="tel:+255719745738">
++255 719 745 738
+</a>
+/
+<a href="tel:+255784762492">
++255 784 762 492
+</a>
+</p>
+
+<p>
+✉
+<a href="mailto:brethrenmissionministry@gmail.com">
+brethrenmissionministry@gmail.com
+</a>
+</p>
+
+<p>
+📍 Tanzania
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Follow us</h3>
+
+<a href="https://www.facebook.com/share/19CYJRCzRL/"
+target="_blank">
+Facebook
+</a>
+
+<a href="https://www.instagram.com/brethrenmissionministry?igsh=Y3J4NGN1OGt6Znk="
+target="_blank">
+Instagram
+</a>
+
+<a href="https://www.tiktok.com/@brethren.mission?_r=1&_t=ZS-98R7CsgeSAC"
+target="_blank">
+TikTok
+</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 Brethren Mission Ministry. Haki Zote Zimehifadhiwa.
+
+</p>
+
+</footer>
+
+<button id="backToTop" title="Rudi Juu">
+🏠
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
