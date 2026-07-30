@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brethren Mission Ministry</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brethren Mission Ministry</title>
 </head>
 
 <body>
@@ -13,21 +13,19 @@
 
 <h1>Brethren Mission Ministry</h1>
 
-<button class="menu-button" id="menuButton">
-    ☰
-</button>
+<button class="menu-button" id="menuButton">☰</button>
 
 <nav class="top-menu" id="topMenu">
 
-<a href="Mwanzo.html">Mwanzo</a>
-<a href="Kuhusu Sisi.html">Kuhusu Sisi</a>
-<a href="Huduma Yetu.html">Huduma Yetu</a>
-<a href="Matukio.html">Matukio</a>
-<a href="Maombi ya Huduma.html">Maombi ya Huduma</a>
-<a href="Pakua Vitabu Bila Malipo.html">Pakua Vitabu Bila Malipo</a>
-<a href="Jiunge Nasi.html">Jiunge Nasi</a>
-<a href="Changia Huduma.html">Changia Huduma</a>
-<a href="Wasiliana Nasi.html">Wasiliana Nasi</a>
+<a href="mwanzo.html">Mwanzo</a>
+<a href="kuhusu-sisi.html">Kuhusu Sisi</a>
+<a href="huduma-yetu.html">Huduma Yetu</a>
+<a href="matukio.html">Matukio</a>
+<a href="maombi-ya-huduma.html">Maombi ya Huduma</a>
+<a href="pakua-vitabu-bila-malipo.html">Pakua Vitabu Bila Malipo</a>
+<a href="jiunge-nasi.html">Jiunge Nasi</a>
+<a href="changia-huduma.html">Changia Huduma</a>
+<a href="wasiliana-nasi.html">Wasiliana Nasi</a>
 
 </nav>
 
@@ -42,7 +40,7 @@ Ingia Kwenye Account
 <select id="languageSelect">
 
 <option value="en">🌐 English</option>
-<option value="sw" selected>🇹🇿 Kiswahili</option>
+<option value="sw">🇹🇿 Kiswahili</option>
 
 </select>
 
@@ -54,21 +52,21 @@ Ingia Kwenye Account
 
 <nav class="mobile-menu" id="mobileMenu">
 
-<a href="Mwanzo.html">Mwanzo</a>
-<a href="Kuhusu Sisi.html">Kuhusu Sisi</a>
-<a href="Matukio.html">Matukio</a>
-<a href="Jiunge Nasi.html">Jiunge Nasi</a>
-<a href="Changia Huduma.html">Changia Huduma</a>
+<a href="mwanzo.html">Mwanzo</a>
+<a href="kuhusu-sisi.html">Kuhusu Sisi</a>
+<a href="matukio.html">Matukio</a>
+<a href="jiunge-nasi.html">Jiunge Nasi</a>
+<a href="changia-huduma.html">Changia Huduma</a>
 
 <hr>
 
-<a href="Huduma Yetu.html">Huduma Yetu</a>
+<a href="huduma-yetu.html">Huduma Yetu</a>
 
 <hr>
 
-<a href="Maombi ya Huduma.html">Maombi ya Huduma</a>
-<a href="Pakua Vitabu Bila Malipo.html">Pakua Vitabu Bila Malipo</a>
-<a href="Wasiliana Nasi.html">Wasiliana Nasi</a>
+<a href="maombi-ya-huduma.html">Maombi ya Huduma</a>
+<a href="pakua-vitabu-bila-malipo.html">Pakua Vitabu Bila Malipo</a>
+<a href="wasiliana-nasi.html">Wasiliana Nasi</a>
 
 <div class="mobile-tools">
 
@@ -81,7 +79,7 @@ Ingia Kwenye Account
 <select id="mobileLanguageSelect">
 
 <option value="en">🌐 English</option>
-<option value="sw" selected>🇹🇿 Kiswahili</option>
+<option value="sw">🇹🇿 Kiswahili</option>
 
 </select>
 
@@ -95,31 +93,45 @@ Ingia Kwenye Account
 
 <main>
 
+<div class="content-card">
+
 <h2>Jiunge na Brethren Mission Ministry</h2>
 
 <p>
 Tunafurahi kwamba una nia ya kuwa sehemu ya huduma yetu. Tafadhali jaza fomu iliyo hapa chini.
 </p>
 
+</div>
+
+<div class="content-card">
+
 <form action="https://formspree.io/f/mrenrrzl" method="POST">
 
-<label for="fullname">Jina Kamili:</label><br>
-<input type="text" id="fullname" name="fullname" required><br><br>
+<label for="fullname">Jina Kamili:</label>
 
-<label for="email">Anwani ya Barua Pepe (Hiari):</label><br>
-<input type="email" id="email" name="email"><br><br>
+<input type="text" id="fullname" name="fullname" required>
 
-<label for="phone">Namba ya Simu (WhatsApp inapendekezwa):</label><br>
-<input type="tel" id="phone" name="phone" required><br><br>
+<label for="email">Anwani ya Barua Pepe (Hiari):</label>
 
-<label for="country">Nchi:</label><br>
-<input type="text" id="country" name="country" required><br><br>
+<input type="email" id="email" name="email">
 
-<label for="city">Mji (Hiari):</label><br>
-<input type="text" id="city" name="city"><br><br>
+<label for="phone">Namba ya Simu (WhatsApp inapendekezwa):</label>
 
-<label for="message">Kwa nini ungependa kujiunga nasi? (Hiari)</label><br>
-<textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+<input type="tel" id="phone" name="phone" required>
+
+<label for="country">Nchi:</label>
+
+<input type="text" id="country" name="country" required>
+
+<label for="city">Mji (Hiari):</label>
+
+<input type="text" id="city" name="city">
+
+<label for="message">
+Kwa nini ungependa kujiunga nasi?
+</label>
+
+<textarea id="message" name="message" rows="5"></textarea>
 
 <button type="submit">
 Wasilisha
@@ -127,7 +139,9 @@ Wasilisha
 
 </form>
 
-<div class="contact-buttons">
+</div>
+
+<div class="content-card contact-buttons">
 
 <p>
 Unaweza kujiunga na kikundi chetu cha WhatsApp moja kwa moja:
@@ -164,6 +178,7 @@ class="whatsapp-button">
 </div>
 
 </main>
+
 </div>
 
 <footer>
@@ -185,12 +200,12 @@ Uinjilisti wa Hadhara na Huduma za Kuwafikia Wahitaji.
 
 <h3>Quick Links</h3>
 
-<a href="Mwanzo.html">Mwanzo</a>
-<a href="Kuhusu Sisi.html">Kuhusu Sisi</a>
-<a href="Huduma Yetu.html">Huduma Yetu</a>
-<a href="Matukio.html">Matukio</a>
-<a href="Jiunge Nasi.html">Jiunge Nasi</a>
-<a href="Changia Huduma.html">Changia Huduma</a>
+<a href="mwanzo.html">Mwanzo</a>
+<a href="kuhusu-sisi.html">Kuhusu Sisi</a>
+<a href="huduma-yetu.html">Huduma Yetu</a>
+<a href="matukio.html">Matukio</a>
+<a href="jiunge-nasi.html">Jiunge Nasi</a>
+<a href="changia-huduma.html">Changia Huduma</a>
 
 </div>
 
@@ -248,9 +263,7 @@ TikTok
 <hr>
 
 <p class="copyright">
-
 © 2026 Brethren Mission Ministry. Haki Zote Zimehifadhiwa.
-
 </p>
 
 </footer>
