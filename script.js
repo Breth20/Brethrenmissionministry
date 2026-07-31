@@ -280,3 +280,6 @@ function setupLanguageSwitcher(id){
 
 setupLanguageSwitcher("languageSelect");
 setupLanguageSwitcher("mobileLanguageSelect");
+
+console.log(window.location.pathname);
+console.log(window.location.pathname.split("/").pop());
