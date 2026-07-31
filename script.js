@@ -209,27 +209,27 @@ const pageMap = {
 
     // English → Kiswahili
     "index.html":"Mwanzo.html",
-    "About.html":"Kuhusu-Sisi.html",
-    "Ministry.html":"Huduma-Yetu.html",
+    "about.html":"Kuhusu-Sisi.html",
+    "ministry.html":"Huduma-Yetu.html",
     "Events.html":"Matukio.html",
-    "Service-Requests.html":"Maombi-ya-Huduma.html",
-    "Downloads.html":"Pakua-Vitabu-Bila-Malipo.html",
+    "service-requests.html":"Maombi-ya-Huduma.html",
+    "downloads.html":"Pakua-Vitabu-Bila-Malipo.html",
     "Join.html":"Jiunge-Nasi.html",
     "Donate.html":"Changia-Huduma.html",
-    "Contact.html":"Wasiliana-Nasi.html",
+    "contact.html":"Wasiliana-Nasi.html",
     "MemberLogin.html":"Ingia-Kwenye-Account.html",
 
 
     // Kiswahili → English
     "Mwanzo.html":"index.html",
-    "Kuhusu-Sisi.html":"About.html",
-    "Huduma-Yetu.html":"Ministry.html",
+    "Kuhusu-Sisi.html":"about.html",
+    "Huduma-Yetu.html":"ministry.html",
     "Matukio.html":"Events.html",
-    "Maombi-ya-Huduma.html":"Service-Requests.html",
-    "Pakua-Vitabu-Bila-Malipo.html":"Downloads.html",
+    "Maombi-ya-Huduma.html":"service-requests.html",
+    "Pakua-Vitabu-Bila-Malipo.html":"downloads.html",
     "Jiunge-Nasi.html":"Join.html",
     "Changia-Huduma.html":"Donate.html",
-    "Wasiliana-Nasi.html":"Contact.html",
+    "Wasiliana-Nasi.html":"contact.html",
     "Ingia-Kwenye-Account.html":"MemberLogin.html"
 
 };
