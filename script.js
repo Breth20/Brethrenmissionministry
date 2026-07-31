@@ -1,4 +1,3 @@
-console.log("script.js loaded");
 
 // =======================================
 // MOBILE MENU
@@ -279,6 +278,9 @@ function setupLanguageSwitcher(id){
     };
 
 }
+
+console.log(document.getElementById("languageSelect"));
+console.log(document.getElementById("mobileLanguageSelect"));
 
 setupLanguageSwitcher("languageSelect");
 setupLanguageSwitcher("mobileLanguageSelect");
