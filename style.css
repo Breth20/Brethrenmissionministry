@@ -343,20 +343,15 @@ footer{
     margin-top:40px;
 }
 .footer-container{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
     gap:40px;
     max-width:1200px;
     margin:0 auto;
+    align-items:start;
 }
 .footer-column{
-    flex:1;
-    max-width:250px;
-}
-.footer-column:first-child{
-    flex:1.5;
-    max-width:350px;
+    min-width:0;
 }
 
 .footer-column h3{
