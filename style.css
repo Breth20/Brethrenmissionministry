@@ -345,10 +345,13 @@ footer{
 .footer-container{
     display:grid;
     grid-template-columns:1.5fr 1fr 1fr 1fr;
-    gap:40px;
+    column-gap:40px;
     max-width:1200px;
     margin:0 auto;
     align-items:start;
+}
+.footer-column:nth-child(2){
+    margin-right:-30px;
 }
 .footer-column{
     min-width:0;
@@ -459,42 +462,43 @@ footer{
 }
 
 
-/* =======================================
+/* =========================
    BACK TO TOP BUTTON
-   ======================================= */
+========================= */
 
 #backToTop{
-position:fixed;
-bottom:20px;
-right:20px;
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
 
-width:50px;
-height:50px;
+    width:50px;
+    height:50px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-background:#FFD54F;
-color:#003366;
+    background:#FFD54F;
+    color:#003366;
 
-border:none;
-border-radius:50%;
+    border:none;
+    border-radius:50%;
 
-font-size:22px;
-line-height:1;
+    font-size:20px;
+    cursor:pointer;
 
-cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
 
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-transition:all 0.3s ease;
+    z-index:999;
+}
 
-z-index:999;
+#backToTop i{
+    line-height:1;
 }
 
 #backToTop:hover{
-background:#ffffff;
-transform:translateY(-3px);
+    background:white;
 }
 
 /* =========================
