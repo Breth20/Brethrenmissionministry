@@ -692,6 +692,12 @@ color:#EA4335;
 .fa-phone{
 color:#34A853;
 }
+.fa-tiktok{
+color:#000;
+text-shadow:
+1px 0 #25F4EE,
+-1px 0 #FE2C55;
+}
 
 /* =========================
    MOBILE RESPONSIVE DESIGN
