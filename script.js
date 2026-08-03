@@ -309,9 +309,9 @@ const backToTop = document.getElementById("backToTop");
 if(backToTop){
 window.addEventListener("scroll",function(){
 if(window.scrollY > 300){
-backToTop.style.display = "block";
+    backToTop.style.display = "flex";
 }else{
-backToTop.style.display = "none";
+    backToTop.style.display = "none";
 }
 });
 backToTop.addEventListener("click",function(){

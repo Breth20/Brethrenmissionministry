@@ -459,33 +459,42 @@ footer{
 }
 
 
-/* =========================
+/* =======================================
    BACK TO TOP BUTTON
-========================= */
+   ======================================= */
 
 #backToTop{
-    display:none;
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    width:55px;
-    height:55px;
-    border:none;
-    border-radius:50%;
-    background:#0a7d2c;
-    color:white;
-    font-size:25px;
-    cursor:pointer;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    transition:0.3s;
-    z-index:9999;
-    align-items:center;
-    justify-content:center;
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:50px;
+height:50px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:#FFD54F;
+color:#003366;
+
+border:none;
+border-radius:50%;
+
+font-size:22px;
+line-height:1;
+
+cursor:pointer;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:all 0.3s ease;
+
+z-index:999;
 }
 
 #backToTop:hover{
-    background:#085f21;
-    transform:translateY(-5px);
+background:#ffffff;
+transform:translateY(-3px);
 }
 
 /* =========================
