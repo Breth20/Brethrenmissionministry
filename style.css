@@ -838,16 +838,19 @@ color:#DB4437;
 ======================================= */
 
 .footer-container{
-    display:flex;
+    display:flex !important;
+    grid-template-columns:none;
     flex-direction:column;
     align-items:center;
     text-align:center;
     gap:35px;
+    width:100%;
 }
 
 .footer-column{
     width:100%;
     max-width:350px;
+    text-align:center;
 }
 
     .mobile-tools .member-button{
