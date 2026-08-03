@@ -36,12 +36,9 @@ const search=this.value.toLowerCase();
 const books=document.querySelectorAll(".book-card");
 books.forEach(function(book){
 const text=book.textContent.toLowerCase();
-if(text.includes(search)){
-book.style.display="block";
-}else{
-book.style.display="none";
-}
+book.style.display=text.includes(search)?"":"none";
 });
+
 });
 }
 
