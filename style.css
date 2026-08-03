@@ -352,11 +352,11 @@ footer{
 }
 .footer-column{
     flex:1;
-    max-width:200px;
+    max-width:250px;
 }
 .footer-column:first-child{
     flex:1.5;
-    max-width:150px;
+    max-width:350px;
 }
 
 .footer-column h3{
