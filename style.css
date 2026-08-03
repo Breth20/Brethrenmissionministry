@@ -645,6 +645,28 @@ footer{
     border-radius:4px;
 }
 
+/* =======================================
+   SOCIAL MEDIA LINKS
+   ======================================= */
+
+.social-links{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:20px;
+}
+
+.social-links .button-link{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+}
+
+.social-links .button-link i{
+font-size:20px;
+}
+
 /* =========================
    MOBILE RESPONSIVE DESIGN
 ========================= */
