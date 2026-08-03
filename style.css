@@ -728,6 +728,19 @@ text-shadow:
 -1px 0 #FE2C55;
 }
 
+/* =======================================
+   CONTACT ICON COLORS
+   ======================================= */
+.fa-envelope{
+color:#EA4335;
+}
+.fa-phone{
+color:#34A853;
+}
+.fa-location-dot{
+color:#DB4437;
+}
+
 /* =========================
    MOBILE RESPONSIVE DESIGN
 ========================= */
