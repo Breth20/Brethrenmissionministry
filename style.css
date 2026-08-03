@@ -344,14 +344,14 @@ footer{
 }
 .footer-container{
     display:grid;
-    grid-template-columns:1.5fr 1fr 1fr 1fr;
+    grid-template-columns:1.5fr 0.8fr 1fr 1fr;
     column-gap:40px;
     max-width:1200px;
     margin:0 auto;
     align-items:start;
 }
 .footer-column:nth-child(2){
-    margin-right:-30px;
+    margin-right:-20px;
 }
 .footer-column{
     min-width:0;
@@ -775,12 +775,11 @@ color:#DB4437;
         cursor:pointer;
     }
 
-
     header h1{
-        font-size:22px;
-        white-space:nowrap;
-        margin:0;
-    }
+    font-size:22px;
+    margin:0;
+    text-align:center;
+}
 
 
     /* Hide sidebar on mobile */
@@ -834,27 +833,21 @@ color:#DB4437;
     }
 
 
-   /* =======================================
+  /* =======================================
    MOBILE FOOTER
-   ======================================= */
+======================================= */
+
 .footer-container{
+    display:flex;
     flex-direction:column;
     align-items:center;
     text-align:center;
     gap:35px;
 }
+
 .footer-column{
     width:100%;
     max-width:350px;
-}
-.footer-column h3{
-    margin-bottom:15px;
-}
-.footer-column a{
-    margin-bottom:12px;
-}
-.footer-column p{
-    margin:10px 0;
 }
 
     .mobile-tools .member-button{
@@ -978,9 +971,8 @@ color:#DB4437;
 /* =======================================
    MOBILE FOOTER SOCIAL MEDIA ALIGNMENT
    ======================================= */
-.footer-column:has(.footer-social-links){
-text-align:center;
-align-items:center;
+.footer-column{
+    text-align:center;
 }
 
 .footer-social-links{
